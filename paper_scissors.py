@@ -9,7 +9,7 @@ Saddiqahs_choice = st.selectbox("Choose your move:", options)
 if st.button("Play"):
     AI_ISMAIL_choice = random.choice(options)
 
-    st.write(f"🧍 You chose: **{Saddiqahs_choice}**")
+    st.write(f"🧍 Saddiqas chose: **{Saddiqahs_choice}**")
     st.write(f"🤖 AI ISMAIL chose: **{AI_ISMAIL_choice}**")
 
     if Saddiqahs_choice == AI_ISMAIL_choice:
@@ -21,4 +21,4 @@ if st.button("Play"):
     ):
         st.success("Saddiqah wins! 🎉")
     else:
-        st.error("AI_ISMAIL wins! 😢")
+        st.error("AI ISMAIL wins! 😢")
