@@ -4,7 +4,7 @@ import random
 st.title("✊ Rock, 🖐 Paper, ✌️ Scissors Game")
 
 options = ["Rock", "Paper", "Scissors"]
-Saddiqahs_choice = st.selectbox("Choose your move:", options)
+Saddiqahs_choice = st.selectbox("Saddiqah choose your move:", options)
 
 if st.button("Play"):
     AI_ISMAIL_choice = random.choice(options)
