@@ -7,18 +7,18 @@ options = ["Rock", "Paper", "Scissors"]
 player_choice = st.selectbox("Choose your move:", options)
 
 if st.button("Play"):
-    computer_choice = random.choice(options)
+    AI_ISMAIL_choice = random.choice(options)
 
     st.write(f"🧍 You chose: **{player_choice}**")
-    st.write(f"🤖 Computer chose: **{computer_choice}**")
+    st.write(f"🤖 AI_ISMAIL chose: **{AI_ISMAIL_choice}**")
 
-    if player_choice == computer_choice:
+    if player_choice == AI_ISMAIL_choice:
         st.info("It's a tie!")
     elif (
-        (player_choice == "Rock" and computer_choice == "Scissors") or
-        (player_choice == "Scissors" and computer_choice == "Paper") or
-        (player_choice == "Paper" and computer_choice == "Rock")
+        (player_choice == "Rock" and AI_ISMAIL_choice == "Scissors") or
+        (player_choice == "Scissors" and AI_ISMAIL_choice == "Paper") or
+        (player_choice == "Paper" and AI_ISMAIL_choice == "Rock")
     ):
         st.success("You win! 🎉")
     else:
-        st.error("Computer wins! 😢")
+        st.error("AI_ISMAIL wins! 😢")
